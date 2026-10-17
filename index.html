@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="BTC Recorder is a personal Bitcoin market data recorder with optional Google Drive backups.">
+<title>BTC Recorder</title>
+<style>:root{color-scheme:light;--ink:#172634;--muted:#536573;--accent:#175d62;--line:#dce5e7;--paper:#fff;--back:#f4f7f7}
+*{box-sizing:border-box}body{margin:0;background:var(--back);color:var(--ink);font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(100% - 40px,780px);margin:auto}header{border-bottom:1px solid var(--line);background:var(--paper)}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}.brand{font-weight:750;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:18px;font-size:15px}a{color:var(--accent);text-underline-offset:3px}nav a{text-decoration:none}nav a[aria-current=page]{font-weight:700;text-decoration:underline}
+main{padding:58px 0 56px}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(32px,6vw,44px);letter-spacing:-.045em;line-height:1.15;margin:14px 0 22px}h2{font-size:22px;letter-spacing:-.02em;line-height:1.3;margin:32px 0 12px}p{margin:0 0 16px}.lead{font-size:21px;color:var(--muted);line-height:1.5}.note{border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--paper);border-radius:8px;padding:22px 24px;margin:28px 0}.note h2{margin-top:0}.note p:last-child{margin-bottom:0}ul{padding-left:24px}li{margin:8px 0}code{font-size:.92em;overflow-wrap:anywhere}.date{font-size:15px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0 36px;font-size:14px;color:var(--muted)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}@media(max-width:520px){header .wrap{align-items:flex-start;flex-direction:column;gap:10px}main{padding-top:36px}.wrap{width:calc(100% - 32px)}.note{padding:18px}}</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./">BTC Recorder</a><nav aria-label="Main navigation"><a href="./" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap" id="main">
+<p class="eyebrow">Personal research utility</p>
+<h1>BTC Recorder</h1>
+<p class="lead">Record public Bitcoin market data and keep a copy in your own Google Drive.</p>
+<h2>What the recorder does</h2>
+<p>BTC Recorder collects public Coinbase Bitcoin spot prices and Kalshi Bitcoin prediction-market data for later research. It stores time-stamped observations, market information, and outcomes on the owner's server.</p>
+<p>When the owner connects Google Drive, the recorder periodically copies compressed data archives and progress files to a dedicated backup folder in that account.</p>
+<section class="note" aria-labelledby="drive-access">
+<h2 id="drive-access">Why it requests Google Drive access</h2>
+<p>Drive access provides the optional backup feature. The app requests the <code>drive.file</code> permission to create and manage its backup files and folders. It works with files created by the app or explicitly made available to it.</p>
+<p>The owner authorizes access directly with Google and controls the destination account. See the <a href="privacy.html">privacy policy</a> for storage, retention, and access controls.</p>
+</section>
+<h2>Operation and control</h2>
+<p>The owner runs the recorder on their server and can stop collection or backups at any time. Google Drive authorization can be revoked from the owner's Google Account connections settings.</p>
+<p>These public pages describe the utility. Research archives are stored on the owner's server and in the owner's Drive backup folder.</p>
+<h2>Project contact</h2>
+<p>Project owner: <a href="https://github.com/vwzigs">vwzigs on GitHub</a>. The informational site's files are maintained in the <a href="https://github.com/vwzigs/btc-recorder-info">btc-recorder-info repository</a>.</p>
+</main>
+<footer><div class="wrap">Maintained by <a href="https://github.com/vwzigs">vwzigs</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></div></footer>
+</body>
+</html>
